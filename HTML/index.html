@@ -2,13 +2,19 @@
 <html>
     <head>
         <meta charset='utf-8'>
-        <title> calcola radice quadrata</title>
+        <title> approssima radice quadrata</title>
+        <link rel="stylesheet"  href="../CSS/stileapprox.css">
+        <script src="../JS/radx.js"></script>
     </head>
 
     <body>
         <h1>calcolatore di radici quadrate</h1>
+        <h2>tramite l'algoritmo di Erone</h2>
         <label>inserisci un numero positivo:</label>
-        <input type='number' name='x'>
-        
+        <input type='number' id='x' min='0'>
+        <button type="button" onclick='calculate()'>
+            calcola
+        </button>
+        <div id='retval'></div>
     </body>
 </html>
